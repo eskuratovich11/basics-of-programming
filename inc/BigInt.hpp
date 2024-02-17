@@ -10,7 +10,7 @@ private:
     bool is_int(const std::string& str);
     BigInt operator*(const char& ch);
 public:
-    BigInt(const char*i);
+    explicit BigInt(const char*i);
     BigInt(const BigInt& bI);
     BigInt& operator+=(const BigInt& bI);
     BigInt& operator*=(const BigInt& bI);
